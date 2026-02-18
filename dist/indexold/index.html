@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphael Bauer | Klavierstimmung</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/index.css">
+
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  </head>
+  <body class="bg-cream text-gray-800">
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdant | Plant Paradise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'leaf': '#3A5A40',
+                        'leaf-light': '#588157',
+                        'earth': '#5E4B2E',
+                        'moss': '#344E41',
+                        'blossom': '#DDA15E',
+                        'cream': '#F8F9FA',
+                        'text-dark': '#2F3E46',
+                    },
+                    fontFamily: {
+                        'sans': ['"Open Sans"', 'sans-serif'],
+                        'display': ['"Libre Baskerville"', 'serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;500;700&display=swap');
+
+        .hero-bg {
+            background-image:
+                linear-gradient(rgba(248, 249, 250, 0.7), rgba(248, 249, 250, 0.3)),
+                url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-cream text-text-dark">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-sm fixed w-full z-50 border-b border-leaf/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="font-display text-2xl text-moss">VERDANT</a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" class="text-sm font-medium text-text-dark hover:text-leaf transition-colors">Plants</a>
+                    <a href="#" class="text-sm font-medium text-text-dark hover:text-leaf transition-colors">Gardens</a>
+                    <a href="#" class="text-sm font-medium text-text-dark hover:text-leaf transition-colors">Care Guide</a>
+                    <a href="#" class="text-sm font-medium text-text-dark hover:text-leaf transition-colors">About</a>
+                    <a href="#" class="px-4 py-2 bg-leaf text-white rounded-full text-sm font-medium hover:bg-moss transition-colors">Contact</a>
+                </div>
+
+                <button class="md:hidden p-2 text-text-dark hover:text-leaf transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen pt-20 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 py-12 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text content - now with better contrast -->
+                <div class="space-y-8 text-center lg:text-left bg-white/70 p-8 rounded-xl backdrop-blur-sm card-shadow">
+                    <div class="space-y-6">
+                        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl leading-tight text-moss text-shadow">
+                            <span class="block">Nurture Your</span>
+                            <span class="block font-light">Plant Paradise</span>
+                        </h1>
+                        <p class="text-lg text-text-dark/90 max-w-lg mx-auto lg:mx-0">
+                            Discover the joy of gardening with our premium plant selection and expert care guides. Transform your space into a lush oasis.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#" class="px-8 py-3 bg-leaf text-white font-medium rounded-full hover:bg-moss transition-colors shadow-md">
+                            Shop Plants
+                        </a>
+                        <a href="#" class="px-8 py-3 border border-text-dark text-text-dark font-medium rounded-full hover:bg-white transition-colors">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Featured plant card -->
+                <div class="relative animate-float">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-cream/50 card-shadow">
+                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+                             alt="Featured plant"
+                             class="w-full h-80 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-display text-xl text-moss">Monstera Deliciosa</h3>
+                            <p class="text-text-dark/80 mt-1">"The Swiss Cheese Plant"</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <span class="font-medium text-leaf text-lg">$39.99</span>
+                                <button class="px-4 py-2 bg-blossom text-white rounded-full text-sm font-medium hover:bg-blossom/90 transition-colors">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-leaf-light text-white px-4 py-2 rounded-full text-sm font-medium shadow">
+                        Popular Choice
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me section -->
+    <div class="w-full max-w-7xl px-4 mx-auto sm:px-8 mt-24">
+        <blockquote class="relative grid items-center bg-white shadow-xl md:grid-cols-3 rounded-xl">
+
+            <img class="hidden object-cover w-full h-full rounded-l-xl md:block" style="clip-path: polygon(0 0%, 100% 0%, 75% 100%, 0% 100%);" src="https://randomuser.me/api/portraits/men/68.jpg">
+
+            <article class="relative p-6 md:p-8 md:col-span-2">
+                <svg class="absolute top-0 right-0 hidden w-24 h-24 -mt-12 -mr-12 text-primary-600 md:block" width="256"
+                    height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M65.44 153.526V149.526H61.44H20.48C11.3675 149.526 4 142.163 4 133.105V51.4211C4 42.3628 11.3675 35 20.48 35H102.4C111.513 35 118.88 42.3628 118.88 51.4211V166.187C118.88 195.935 95.103 220.165 65.44 220.979V153.526ZM198.56 153.526V149.526H194.56H153.6C144.487 149.526 137.12 142.163 137.12 133.105V51.4211C137.12 42.3628 144.487 35 153.6 35H235.52C244.633 35 252 42.3628 252 51.4211V166.187C252 195.935 228.223 220.165 198.56 220.979V153.526Z"
+                        stroke="currentColor" stroke-width="8"></path>
+                </svg>
+
+                <div class="space-y-8">
+                    <p class="text-base sm:leading-relaxed md:text-2xl">
+                        Hi, I'm John. I'm a 35-year-old software engineer with a passion for creating innovative solutions.
+                        I graduated with a degree in Computer Science from a prestigious university and have been working in
+                        the tech industry for over a decade. Throughout my career, I have gained extensive experience in
+                        programming languages like Python, Java, and C++. I thrive in challenging environments and enjoy
+                        collaborating with teams to develop cutting-edge software applications.
+                    </p>
+
+                    <footer class="flex items-center space-x-4 md:space-x-0">
+                        <img class="w-12 h-12 rounded-full md:hidden" src="https://randomuser.me/api/portraits/men/6.jpg">
+                        <span class="font-bold text-lg">John doe</span>
+                    </footer>
+                </div>
+            </article>
+        </blockquote>
+    </div>
+
+    <!-- Plant benefits section -->
+
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-display text-3xl text-center text-moss mb-12">Why Plants Make Life Better</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cream p-8 rounded-xl shadow-md border border-cream/50 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-leaf/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3A5A40" viewBox="0 0 16 16">
+                            <path d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                            <path d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl text-moss mb-2">Air Purification</h3>
+                    <p class="text-text-dark/80">Plants naturally filter toxins and release oxygen, improving your indoor air quality.</p>
+                </div>
+
+                <div class="bg-cream p-8 rounded-xl shadow-md border border-cream/50 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-leaf/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3A5A40" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl text-moss mb-2">Stress Reduction</h3>
+                    <p class="text-text-dark/80">Caring for plants lowers stress levels and promotes mindfulness.</p>
+                </div>
+
+                <div class="bg-cream p-8 rounded-xl shadow-md border border-cream/50 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-leaf/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3A5A40" viewBox="0 0 16 16">
+                            <path d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl text-moss mb-2">Productivity Boost</h3>
+                    <p class="text-text-dark/80">Greenery in your workspace can increase productivity by up to 15%.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Service section -->
+    <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+        <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">Services</h2>
+        <p class="mb-12 text-lg text-gray-500">Here is a few of the awesome Services we provide.</p>
+        <div class="w-full">
+            <div class="flex flex-col w-full mb-10 sm:flex-row">
+                <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+                    <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">DAPP Development</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">A decentralized application (dapp) is an application built on a
+                                decentralized network that combines a smart contract and a frontend user interface.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2">
+                    <div class="relative h-full ml-0 md:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-purple-500 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Web 3.0 Development</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-purple-500 uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">Web 3.0 is the third generation of Internet services that will
+                                focus on understanding and analyzing data to provide a semantic web.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col w-full mb-5 sm:flex-row">
+                <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+                    <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Project Audit</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">A Project Audit is a formal review of a project, which is intended
+                                to assess the extent up to which project management standards are being upheld.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+                    <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Hacking / RE</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">A security hacker is someone who explores methods for breaching
+                                defenses and exploiting weaknesses in a computer system or network.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2">
+                    <div class="relative h-full ml-0 md:mr-10">
+                        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
+                        <div class="relative h-full p-5 bg-white border-2 border-green-500 rounded-lg">
+                            <div class="flex items-center -mt-1">
+                                <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Bot/Script Development</h3>
+                            </div>
+                            <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
+                            <p class="mb-2 text-gray-600">Bot development frameworks were created as advanced software tools
+                                that eliminate a large amount of manual work and accelerate the development process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Leistungen section -->
+    <div class="border border-gray-300 shadow-sm rounded-lg overflow-hidden max-w-sm mx-auto mt-16">
+      <table class="w-full text-sm leading-5">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="py-3 px-4 text-left font-medium text-gray-600">Leistung</th>
+            <th class="py-3 px-4 text-left font-medium text-gray-600">Preis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-3 px-4 text-left font-medium text-gray-600">Klavierstimmung / Flügelstimmung</td> <!-- Info Button fehlt mit hover Info bei allen Leistungen-->
+            <td class="py-3 px-4 text-left">105 €*</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="py-3 px-4 text-left font-medium text-gray-600">Sonderpreis Klavierstimmung / Flügelstimmung</td>
+            <td class="py-3 px-4 text-left">85 €*</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 text-left font-medium text-gray-600 pl-8">Saturated Fat</td>
+            <td class="py-3 px-4 text-left">3.5g</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="py-3 px-4 text-left font-medium text-gray-600 pl-8">Trans Fat</td>
+            <td class="py-3 px-4 text-left">0g</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 text-left font-medium text-gray-600">Cholesterol</td>
+            <td class="py-3 px-4 text-left">45mg</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="py-3 px-4 text-left font-medium text-gray-600">Sodium</td>
+            <td class="py-3 px-4 text-left">430mg</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 text-left font-medium text-gray-600">Total Carbohydrate</td>
+            <td class="py-3 px-4 text-left">19g</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="py-3 px-4 text-left font-medium text-gray-600 pl-8">Dietary Fiber</td>
+            <td class="py-3 px-4 text-left">3g</td>
+          </tr>
+          <tr>
+            <td class="py-3 px-4 text-left font-medium text-gray-600 pl-8">Sugars</td>
+            <td class="py-3 px-4 text-left">4g</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="py-3 px-4 text-left font-medium text-gray-600">Protein</td>
+            <td class="py-3 px-4 text-left">22g</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Contact section -->
+    <div class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Kontakt</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Schreiben Sie mir doch eine Mail
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
+                    in, accusamus quisquam.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Heroicon name: globe-alt -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Address
+                            </dt>
+                            <dd class="mt-2 text-base text-gray-500">
+                                123 Main St, Suite 100<br>
+                                Anytown, USA 12345
+                            </dd>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Heroicon name: phone -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Phone number
+                            </dt>
+                            <dd class="mt-2 text-base text-gray-500">
+                                (555) 555-5555
+                            </dd>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Heroicon name: mail -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Email
+                            </dt>
+                            <dd class="mt-2 text-base text-gray-500">
+                                info@ourstore.com
+                            </dd>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Heroicon name: clock -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Store Hours
+                            </dt>
+                            <dd class="mt-2 text-base text-gray-500">
+                                Monday - Friday: 9am to 8pm<br>
+                                Saturday: 10am to 6pm<br>
+                                Sunday: 12pm to 4pm
+                            </dd>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer Section -->
+
+
+</body>
+
+   <!-- Footer Section -->
+<footer>
+    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="sm:col-span-2">
+          <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+            <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+              <rect x="3" y="1" width="7" height="12"></rect>
+              <rect x="3" y="17" width="7" height="6"></rect>
+              <rect x="14" y="1" width="7" height="6"></rect>
+              <rect x="14" y="11" width="7" height="12"></rect>
+            </svg>
+            <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+          </a>
+          <div class="mt-6 lg:max-w-sm">
+            <p class="text-sm text-gray-800">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+            <p class="mt-4 text-sm text-gray-800">
+              Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 text-sm">
+          <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+          <div class="flex">
+            <p class="mr-1 text-gray-800">Phone:</p>
+            <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">850-123-5021</a>
+          </div>
+          <div class="flex">
+            <p class="mr-1 text-gray-800">Email:</p>
+            <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@lorem.mail</a>
+          </div>
+          <div class="flex">
+            <p class="mr-1 text-gray-800">Address:</p>
+            <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+              312 Lovely Street, NY
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
+          <div class="flex items-center mt-1 space-x-3">
+            <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                <path
+                  d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+                ></path>
+              </svg>
+            </a>
+            <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+              <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+                <circle cx="15" cy="15" r="4"></circle>
+                <path
+                  d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
+                ></path>
+              </svg>
+            </a>
+            <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                <path
+                  d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <p class="mt-4 text-sm text-gray-500">
+            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+        <p class="text-sm text-gray-600">
+          © Copyright 2020 Lorem Inc. All rights reserved.
+        </p>
+        <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+          <li>
+            <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</a>
+          </li>
+          <li>
+            <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp; Conditions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</footer
+</html>
+  </body>
+</html>

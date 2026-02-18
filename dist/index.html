@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphael Bauer | Klavierstimmung &amp; Service Stuttgart</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/index.css">
+
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  </head>
+  <body class="bg-cream text-gray-800">
+    
+<nav x-data="{ mobileMenuOpen: false }" class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+            <div class="text-2xl font-display font-bold text-leaf">R. Bauer</div>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#ueber-mich" class="hover:text-leaf transition font-medium text-gray-700">Über mich</a>
+                <a href="#leistungen" class="hover:text-leaf transition font-medium text-gray-700">Leistungen</a>
+                <a href="#preise" class="hover:text-leaf transition font-medium text-gray-700">Preise</a>
+                <a href="#kontakt" class="px-5 py-2 bg-leaf text-white rounded-full hover:bg-leaf-light transition">Kontakt</a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button @click="mobileMenuOpen = !mobileMenuOpen"
+                        class="group flex h-14 w-14 cursor-pointer items-center justify-center rounded-xl bg-white border border-gray-100 shadow-sm hover:bg-cream transition-colors md:hidden">
+                    <div class="space-y-2">
+                        <span :class="mobileMenuOpen ? 'translate-y-1.5 rotate-45 w-8' : 'w-8'"
+                              class="block h-1 origin-center rounded-full bg-leaf transition-all duration-300 ease-in-out"></span>
+                        <span :class="mobileMenuOpen ? '-translate-y-1.5 -rotate-45 w-8' : 'w-6'"
+                              class="block h-1 origin-center rounded-full bg-earth transition-all duration-300 ease-in-out"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div x-show="mobileMenuOpen"
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-4"
+         x-transition:leave="transition ease-in duration-150"
+         class="md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-6 space-y-2 shadow-xl">
+        <a @click="mobileMenuOpen = false" href="#ueber-mich" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-cream rounded-md">Über mich</a>
+        <a @click="mobileMenuOpen = false" href="#leistungen" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-cream rounded-md">Leistungen</a>
+        <a @click="mobileMenuOpen = false" href="#preise" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-cream rounded-md">Preise</a>
+        <a @click="mobileMenuOpen = false" href="#kontakt" class="block px-3 py-2 text-base font-medium bg-leaf text-white rounded-md">Kontakt</a>
+    </div>
+</nav>
+
+<header
+    x-data="{ scroll: 0 }"
+    @scroll.window="scroll = window.pageYOffset"
+    class="relative bg-cream overflow-hidden flex flex-col lg:flex-row lg:min-h-screen">
+
+    <div class="w-full lg:w-7/12 flex items-center px-6 md:px-12 lg:px-20 pt-32 pb-12 lg:py-0 z-10">
+        <div class="max-w-2xl w-full flex flex-col">
+
+            <div class="w-16 h-1 bg-leaf mb-4 hidden md:block"></div>
+
+            <div class="group cursor-default select-none mb-10 md:mb-14">
+                <h1 class="font-display leading-[1.1]">
+                    <span class="block text-3xl sm:text-4xl md:text-5xl text-gray-400 transition-all duration-1000 ease-out group-hover:translate-x-3">
+                        Meisterhafte
+                    </span>
+                    <span class="block text-4xl sm:text-7xl lg:text-8xl font-bold text-piano-dark transition-all duration-700 ease-out group-hover:translate-x-1 break-words">
+                        Klavier<span class="text-leaf">stimmung</span>
+                    </span>
+                    <span class="block text-xl sm:text-2xl md:text-3xl text-earth italic mt-2 md:mt-4 text-right transition-all duration-1000 ease-out group-hover:-translate-x-5">
+                        & Technischer Service
+                    </span>
+                </h1>
+            </div>
+
+            <div
+                :style="`transform: translate3d(-${scroll * 0.7}px, 0, 0); opacity: ${1 - (scroll / 300)}`"
+                class="relative ml-4 md:ml-12 transition-none"
+            >
+                <span class="absolute -left-6 -top-4 text-4xl md:text-6xl text-leaf/20 font-display">„</span>
+                <p class="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-xl italic font-display">
+                    Präzision in jedem Ton.
+                </p>
+                <p class="text-lg md:text-xl text-gray-500 leading-relaxed max-w-xl mt-2">
+                    Raphael Bauer sorgt im <span class="text-piano-dark font-semibold">Raum Stuttgart</span> für den perfekten Klang, den Ihr Instrument verdient.
+                </p>
+                <span class="absolute -bottom-6 right-10 text-4xl md:text-6xl text-leaf/20 font-display">“</span>
+            </div>
+
+            <div
+                :style="`transform: translate3d(0, -${scroll * 0.25}px, 0)`"
+                class="pt-12 md:pt-16"
+            >
+                <a href="#kontakt" class="inline-block w-full sm:w-auto text-center px-10 py-4 bg-leaf text-white font-bold rounded-lg shadow-xl hover:bg-leaf-light transition-all transform hover:-translate-y-1 active:scale-95">
+                    Termin vereinbaren
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden lg:block lg:w-5/12 lg:h-screen relative overflow-hidden">
+        <img
+            src="/assets/images/BildChrista.jpg"
+            alt="Raphael Bauer bei der Arbeit"
+            :style="`transform: scale(${1 - (scroll / 2000)}); opacity: ${1 - (scroll / 1000)}`"
+            class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-none origin-center"
+        >
+        <div class="absolute inset-0 bg-gradient-to-r from-cream via-transparent to-transparent"></div>
+    </div>
+</header>
+
+    <div x-data="{ showTop: false }"
+         @scroll.window="showTop = (window.pageYOffset > 800)"
+         class="fixed bottom-6 right-6 z-[60]">
+        <button x-show="showTop"
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 translate-y-10"
+                x-transition:enter-end="opacity-100 translate-y-0"
+                x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 translate-y-0"
+                x-transition:leave-end="opacity-0 translate-y-10"
+                @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+                class="bg-leaf text-white rounded-full w-12 h-12 flex items-center justify-center shadow-2xl hover:bg-leaf-light hover:scale-110 transition-all active:scale-95 group">
+            <svg class="w-6 h-6 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+            </svg>
+        </button>
+    </div>
+
+    <section id="ueber-mich" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="/assets/images/Raphael.jpg" alt="Raphael Bauer" class="rounded-2xl shadow-2xl w-full object-cover aspect-[4/5]">
+                </div>
+                <div>
+                    <h2 class="text-base font-semibold text-leaf tracking-wide uppercase">Der Klavierstimmer</h2>
+                    <p class="mt-2 text-4xl font-display text-gray-900">Über mich</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">
+                        Ein Klavier ist mehr als nur ein Instrument – es ist ein komplexes Gefüge aus tausenden Teilen, das Pflege und Gehör benötigt.
+                        Mein Ziel ist es, den individuellen Charakter Ihres Instruments voll zur Entfaltung zu bringen...
+                    </p>
+                    <div class="mt-8">
+                        <a href="#kontakt" class="text-leaf font-bold border-b-2 border-leaf pb-1 hover:text-leaf-light hover:border-leaf-light transition">Termin vereinbaren &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leistungen" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-display mb-16">Umfassender Service</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="text-leaf text-3xl mb-4 text-left">🎹</div>
+                    <h3 class="text-xl font-bold mb-2 text-left">Stimmung</h3>
+                    <p class="text-gray-600 text-left text-sm">Präzise Stimmung für Klaviere und Flügel, angepasst an die akustischen Gegebenheiten.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="text-leaf text-3xl mb-4 text-left">🛠️</div>
+                    <h3 class="text-xl font-bold mb-2 text-left">Reparatur & Wartung</h3>
+                    <p class="text-gray-600 text-left text-sm">Reparaturen vor Ort, Intonierung und Regulierung der Mechanik für ein perfektes Spielgefühl.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="text-leaf text-3xl mb-4 text-left">✨</div>
+                    <h3 class="text-xl font-bold mb-2 text-left">Veredelung</h3>
+                    <p class="text-gray-600 text-left text-sm">Oberflächenbehandlung, gründliche Reinigungsarbeiten und Wertermittlung Ihres Instruments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="preise" class="py-24 bg-white" x-data="{ openTuning: false }">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-display mb-4 text-center">Leistung & Preise</h2>
+            <p class="text-center text-gray-500 mb-12 italic">Gemäß § 19 UStG wird keine Mehrwertsteuer erhoben (Kleinunternehmerregelung).</p>
+
+            <div class="border rounded-2xl overflow-hidden shadow-sm">
+                <div class="border-b bg-gray-50/50">
+                    <button @click="openTuning = !openTuning" class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition">
+                        <div>
+                            <span class="block text-xl font-bold">Klavier- & Flügelstimmung</span>
+                            <span class="text-sm text-leaf">Klicken für Details zu Abweichungen & Sonderpreisen</span>
+                        </div>
+                        <div class="text-2xl" x-text="openTuning ? '−' : '+'"></div>
+                    </button>
+
+                    <div x-show="openTuning" x-collapse class="bg-white p-6 space-y-4 border-t">
+                        <div class="flex justify-between items-start border-b pb-3">
+                            <div>
+                                <p class="font-bold">Regelmäßige Stimmung</p>
+                                <p class="text-sm text-gray-500 italic">Geringe Tonhöhenabweichung, inkl. Fahrtkosten bis 30 km</p>
+                            </div>
+                            <span class="font-bold text-leaf text-lg">105 €</span>
+                        </div>
+                        <div class="flex justify-between items-start border-b pb-3">
+                            <div>
+                                <p class="font-bold">Zweites Instrument</p>
+                                <p class="text-sm text-gray-500 italic">Am selben Termin, bei regelmäßiger Stimmung</p>
+                            </div>
+                            <span class="font-bold text-leaf text-lg">85 €</span>
+                        </div>
+                        <div class="flex justify-between items-start border-b pb-3">
+                            <div>
+                                <p class="font-bold text-red-700">Starke Verstimmung</p>
+                                <p class="text-sm text-gray-500 italic">Inkl. Vorstimmen an extra Termin & Fahrtkosten bis 30 km</p>
+                            </div>
+                            <span class="font-bold text-leaf text-lg">195 €</span>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="font-bold">Zweites Instrument (Stark verstimmt)</p>
+                                <p class="text-sm text-gray-500 italic">Inkl. Vorstimmen an extra Termin</p>
+                            </div>
+                            <span class="font-bold text-leaf text-lg">155 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-b flex justify-between items-center bg-white">
+                    <div>
+                        <span class="block font-bold">Besichtigung / Bewertung</span>
+                        <span class="text-sm text-gray-500 italic">Für Kauf/Verkauf, inkl. Fahrt bis 30 km</span>
+                    </div>
+                    <span class="font-bold text-lg">45 €</span>
+                </div>
+
+                <div class="p-6 border-b flex justify-between items-center bg-white">
+                    <div>
+                        <span class="block font-bold">Stundenlohn Reparatur</span>
+                        <span class="text-sm text-gray-500 italic">Intonieren, Regulieren, Reinigung (zzgl. Material)</span>
+                    </div>
+                    <span class="font-bold text-lg">45 €</span>
+                </div>
+
+                <div class="p-6 flex justify-between items-center bg-gray-50/30">
+                    <div>
+                        <span class="block font-bold">Fahrtkostenpauschale</span>
+                        <span class="text-sm text-gray-500 italic">30 km bis 60 km einfache Strecke</span>
+                    </div>
+                    <span class="font-bold text-lg">20 €</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-24 bg-leaf text-white">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-display mb-8">Kontakt</h2>
+            <p class="text-xl mb-12 opacity-90">Haben Sie Fragen oder möchten Sie einen Termin vereinbaren?</p>
+
+            <div class="grid md:grid-cols-2 gap-12 text-left">
+                <div class="bg-white/10 p-8 rounded-2xl border border-white/20">
+                    <h3 class="text-2xl font-display mb-4">Anrufen</h3>
+                    <p class="text-3xl font-bold mb-2"><a href="tel:+4915752684812" class="hover:text-blossom transition">+49 157 526 84812</a></p>
+                    <p class="opacity-70 italic">Gerne auch per WhatsApp</p>
+                </div>
+                <div class="bg-white/10 p-8 rounded-2xl border border-white/20">
+                    <h3 class="text-2xl font-display mb-4">Schreiben</h3>
+                    <a href="mailto:stimmer.rbauer@gmail.com" class="inline-block px-8 py-3 bg-white text-leaf font-bold rounded-full hover:bg-cream transition">E-Mail senden</a>
+                    <p class="mt-4 opacity-70">Standort: Leonorenstraße 69, 70597 Stuttgart</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-12 bg-white text-gray-400 text-sm border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:row justify-between items-center space-y-4 md:space-y-0">
+            <div>&copy; 2026 Raphael Bauer | Alle Rechte vorbehalten</div>
+            <div class="flex space-x-6">
+                <a href="/impressum" class="hover:text-leaf transition">Impressum</a>
+                <a href="/datenschutz" class="hover:text-leaf transition">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+  </body>
+</html>

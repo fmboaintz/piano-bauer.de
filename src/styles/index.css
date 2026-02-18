@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --color-piano-dark: #1a1a1b;
+    --color-leaf: #3A5A40;
+    --color-leaf-light: #588157;
+    --color-earth: #5E4B2E;
+    --color-cream: #F8F9FA;
+
+    --font-display: "Libre Baskerville", serif;
+    --font-sans: "Open Sans", sans-serif;
+}
