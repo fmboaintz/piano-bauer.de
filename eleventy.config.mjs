@@ -2,31 +2,42 @@ import fs from 'fs';
 import path from 'path';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
+import autoprefixer from 'autoprefixer'; // Empfohlen für Browser-Kompatibilität
 
 export default function (eleventyConfig) {
-    // NEU: Diese Zeile sagt Eleventy: "Kopiere den assets-Ordner so wie er ist rüber"
+    // Filter für das Datum
+    eleventyConfig.addFilter("date", (dateObj, format) => {
+        const d = dateObj === "now" ? new Date() : new Date(dateObj);
+        if (format === "Y" || format === "yyyy") return d.getFullYear();
+        return d.toLocaleDateString("de-DE");
+    });
+
     eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addWatchTarget("./src/styles/**/*.css");
 
-    eleventyConfig.on('eleventy.before', async () => {
-        const tailwindInputPath = path.resolve('./src/styles/index.css');
-        const tailwindOutputPath = './dist/styles/index.css';
+    // Der CSS Prozess
+    eleventyConfig.on('eleventy.after', async () => {
+        const inputPath = './src/styles/index.css';
+        const outputPath = './dist/styles/index.css';
 
-        // Sicherstellen, dass die Datei existiert, bevor wir lesen
-        if (!fs.existsSync(tailwindInputPath)) return;
+        if (!fs.existsSync(inputPath)) return;
 
-        const cssContent = fs.readFileSync(tailwindInputPath, 'utf8');
-        const outputDir = path.dirname(tailwindOutputPath);
-
-        if (!fs.existsSync(outputDir)) {
-            fs.mkdirSync(outputDir, { recursive: true });
-        }
-
-        const result = await postcss([tailwindcss()]).process(cssContent, {
-            from: tailwindInputPath,
-            to: tailwindOutputPath,
+        const cssContent = fs.readFileSync(inputPath, 'utf8');
+        
+        // Wir fügen autoprefixer hinzu, damit Flexbox/Grid in allen Browsern läuft
+        const result = await postcss([
+            tailwindcss(),
+            autoprefixer() 
+        ]).process(cssContent, {
+            from: inputPath,
+            to: outputPath,
         });
 
-        fs.writeFileSync(tailwindOutputPath, result.css);
+        const outputDir = path.dirname(outputPath);
+        if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+        
+        fs.writeFileSync(outputPath, result.css);
+        console.log('CSS erfolgreich generiert.');
     });
 
     return {
