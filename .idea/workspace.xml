@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="57351581-9025-4385-bd90-f3eae323b154" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/datenschutz/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/datenschutz/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/impressum/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/impressum/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/indexold/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/indexold/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eleventy.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eleventy.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_includes/layouts/default.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/layouts/default.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "feature/landingPage",
+    "git-widget-placeholder": "main",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -72,6 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1771428629557</updated>
       <workItem from="1771428631217" duration="1296000" />
+      <workItem from="1771764286688" duration="666000" />
     </task>
     <servers />
   </component>
