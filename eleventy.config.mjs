@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
-import autoprefixer from 'autoprefixer'; // Empfohlen für Browser-Kompatibilität
+import autoprefixer from 'autoprefixer';
 
 export default function (eleventyConfig) {
     // Filter für das Datum
@@ -12,7 +12,10 @@ export default function (eleventyConfig) {
         return d.toLocaleDateString("de-DE");
     });
 
+    // WICHTIG: Hier kopieren wir die Google-Datei und die Assets ins Zielverzeichnis
     eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addPassthroughCopy("src/google699c274e08195c77.html");
+
     eleventyConfig.addWatchTarget("./src/styles/**/*.css");
 
     // Der CSS Prozess
@@ -23,11 +26,10 @@ export default function (eleventyConfig) {
         if (!fs.existsSync(inputPath)) return;
 
         const cssContent = fs.readFileSync(inputPath, 'utf8');
-        
-        // Wir fügen autoprefixer hinzu, damit Flexbox/Grid in allen Browsern läuft
+
         const result = await postcss([
             tailwindcss(),
-            autoprefixer() 
+            autoprefixer()
         ]).process(cssContent, {
             from: inputPath,
             to: outputPath,
@@ -35,7 +37,7 @@ export default function (eleventyConfig) {
 
         const outputDir = path.dirname(outputPath);
         if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-        
+
         fs.writeFileSync(outputPath, result.css);
         console.log('CSS erfolgreich generiert.');
     });

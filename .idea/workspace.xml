@@ -2,12 +2,199 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57351581-9025-4385-bd90-f3eae323b154" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/google699c274e08195c77.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/datenschutz/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/datenschutz/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/impressum/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/impressum/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eleventy.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eleventy.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/acorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/eleventy" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/eleventy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/eleventy-dev-server" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/eleventy-dev-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/errno" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/errno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esparse" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esparse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esvalidate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esvalidate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jiti" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jiti" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/liquid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/liquidjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/liquidjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/markdown-it" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/markdown-it" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nanoid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nanoid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/nunjucks-precompile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/nunjucks-precompile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/oxide-win32-x64-msvc/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/oxide-win32-x64-msvc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/oxide-win32-x64-msvc/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@tailwindcss/oxide-win32-x64-msvc/tailwindcss-oxide.win32-x64-msvc.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gray-matter/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gray-matter/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss-win32-x64-msvc/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss-win32-x64-msvc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss-win32-x64-msvc/lightningcss.win32-x64-msvc.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lightningcss-win32-x64-msvc/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/base64-impl-browser.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/base64-impl-browser.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/base64-impl-browser.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/base64-impl-browser.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/fs-impl-browser.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/fs-impl-browser.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/fs-impl-browser.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/fs-impl-browser.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/streamed-emitter-browser.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/streamed-emitter-browser.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/streamed-emitter-browser.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/build/streamed-emitter-browser.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/cache/cache.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/cache/cache.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/cache/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/cache/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/cache/lru.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/cache/lru.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/cache/lru.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/cache/lru.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/block-mode.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/block-mode.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/context.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/context.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/context.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/context.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/scope.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/context/scope.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/blank-drop.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/blank-drop.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/block-drop.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/block-drop.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/comparable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/comparable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/drop.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/drop.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/empty-drop.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/empty-drop.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/forloop-drop.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/forloop-drop.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/null-drop.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/null-drop.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/tablerowloop-drop.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/drop/tablerowloop-drop.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/emitter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/emitter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/keeping-type-emitter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/keeping-type-emitter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/simple-emitter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/simple-emitter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/streamed-emitter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/emitters/streamed-emitter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/array.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/array.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/base64-impl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/base64-impl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/base64.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/base64.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/date.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/date.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/html.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/html.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/math.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/math.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/misc.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/misc.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/string.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/string.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/url.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/filters/url.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/fs-impl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/fs-impl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/fs-impl.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/fs-impl.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/fs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/fs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/loader.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/loader.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/loader.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/loader.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/map-fs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/map-fs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/map-fs.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/map-fs.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/node-require.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/fs/node-require.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid-options.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid-options.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid-options.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid-options.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.browser.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.browser.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.browser.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.browser.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.node.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/liquid.node.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/filter-arg.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/filter-arg.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/parse-stream.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/parse-stream.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/parse-stream.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/parse-stream.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/parser.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/parser.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/parser.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/parser.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/token-kind.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/token-kind.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/tokenizer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/tokenizer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/tokenizer.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/tokenizer.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/whitespace-ctrl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/parser/whitespace-ctrl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/boolean.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/boolean.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/boolean.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/boolean.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/expression.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/expression.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/expression.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/expression.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/operator.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/operator.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/render.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/render.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/render.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/render.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/string.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/string.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/string.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/render/string.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/assign.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/assign.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/block.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/block.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/break.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/break.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/capture.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/capture.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/case.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/case.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/comment.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/comment.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/continue.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/continue.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/cycle.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/cycle.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/decrement.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/decrement.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/echo.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/echo.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/for.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/for.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/if.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/if.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/include.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/include.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/increment.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/increment.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/inline-comment.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/inline-comment.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/layout.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/layout.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/liquid.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/liquid.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/raw.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/raw.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/render.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/render.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/tablerow.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/tablerow.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/unless.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tags/unless.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/analysis.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/analysis.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/analysis.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/analysis.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/filter-impl-options.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/filter-impl-options.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/filter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/filter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/filter.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/filter.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/hash.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/hash.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/hash.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/hash.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/html.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/html.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/output.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/output.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/output.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/output.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/tag-options-adapter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/tag-options-adapter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/tag.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/tag.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/template-impl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/template-impl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/template.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/template.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/value.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/value.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/value.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/template/value.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/delimited-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/delimited-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/filter-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/filter-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/filtered-value-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/filtered-value-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/hash-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/hash-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/html-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/html-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/identifier-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/identifier-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/liquid-tag-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/liquid-tag-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/literal-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/literal-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/number-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/number-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/operator-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/operator-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/output-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/output-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/property-access-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/property-access-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/quoted-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/quoted-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/range-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/range-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/tag-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/tag-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/top-level-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/top-level-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/value-token.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/tokens/value-token.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/assert.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/assert.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/assert.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/assert.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/async.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/async.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/async.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/async.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/character.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/character.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/error.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/error.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/error.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/error.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/intl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/intl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/limiter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/limiter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/liquid-date.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/liquid-date.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/liquid-date.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/liquid-date.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/literal.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/literal.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/operator-trie.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/operator-trie.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/performance.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/performance.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/performance.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/performance.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/strftime.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/strftime.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/strftime.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/strftime.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/type-guards.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/type-guards.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/type-guards.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/type-guards.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/underscore.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/underscore.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/underscore.spec.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/liquidjs/dist/util/underscore.spec.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nunjucks/browser/nunjucks-slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nunjucks/browser/nunjucks-slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nunjucks/browser/nunjucks.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nunjucks/browser/nunjucks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_includes/layouts/default.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/layouts/default.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,20 +223,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/fabian/Desktop/Raphael Website/github/src&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/images" />
     </key>
@@ -70,7 +261,9 @@
       <option name="presentableId" value="Default" />
       <updated>1771428629557</updated>
       <workItem from="1771428631217" duration="1296000" />
-      <workItem from="1771764286688" duration="666000" />
+      <workItem from="1771764286688" duration="1541000" />
+      <workItem from="1771968680516" duration="887000" />
+      <workItem from="1772133439877" duration="10653000" />
     </task>
     <servers />
   </component>
