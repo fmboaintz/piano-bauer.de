@@ -220,14 +220,15 @@
 
                 <div class="relative flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
 
+                    <!-- Linke Spalte: Foto & Qualifikationen (Sticky) -->
                     <div class="w-full md:w-5/12 relative">
                         <div class="md:sticky md:top-32 h-fit transition-all duration-1000 ease-in-out transform origin-top-left"
                              :class="openBio ? 'md:scale-95' : 'scale-100'">
 
                             <div class="relative">
                                 <img src="/assets/images/Raphael.jpg"
-                                    alt="Raphael Bauer - Klavier- und Cembalobauer"
-                                    class="rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover relative z-10">
+                                     alt="Raphael Bauer - Klavier- und Cembalobauer"
+                                     class="rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover relative z-10">
                                 <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-leaf/10 -z-0 rounded-full transition-opacity duration-1000"
                                      :class="openBio ? 'opacity-40' : 'opacity-100'"></div>
                             </div>
@@ -254,41 +255,69 @@
                         </div>
                     </div>
 
+                    <!-- Rechte Spalte: Text & Wechsel-Logik -->
                     <div class="w-full md:w-7/12 flex flex-col">
                         <h2 class="text-leaf font-semibold uppercase tracking-widest text-sm">Werdegang</h2>
                         <h3 class="mt-2 text-4xl font-display text-piano-dark">Expertise & <span class="italic text-earth">Musikalität</span></h3>
 
-                        <div class="mt-8 space-y-6 text-lg text-gray-600 leading-relaxed">
-                            <p>
-                                Ich wuchs in einem musikalischen Elternhaus auf, wodurch mein Lebensweg in gewissem Rahmen vorgeprägt war. Mit 7 Jahren trat ich beim Knabenchor collegium iuvenum Stuttgart ein, mit 9 Jahren begann ich mit Violoncello - Unterricht. In Vorbereitung und parallel zu meinem Gesangsstudiums zum Diplomchorsänger an der Sängerakademie in Hamburg (2004-2009) kam Klavierunterricht dazu.
-                            </p>
-                            <p>
-                                In meiner Freizeit singe ich aktuell in einigen Chören mit hohem Anspruch in Stuttgart und Maulbronn.
-                            </p>
+                        <div class="mt-8 text-lg text-gray-600 leading-relaxed">
 
-                            <div x-show="openBio" x-collapse.duration.1000ms>
-                                <div class="space-y-6 pt-6 mt-6 border-t border-gray-100">
-                                    <p>Bereits während meiner Kindheit und Jugend beherrschte gute Intonation und Stimmung von Instrumenten und Sängern meine ganze Aufmerksamkeit. Folgerichtig faszinierte mich der Beruf des Klavierbauers/Klavierstimmers.</p>
-                                    <p>Hinzu kam meine Begeisterung für den handwerklichen Umgang mit Holz und die Neugierde auf die mechanischen Zusammenhänge beim Klavierbau. Die Kombination aus Musik und Handwerk reizten mich an diesem Beruf besonders.</p>
-                                    <p>Herrn Ulrich Charisius (Heidelberg), legendärer Klavierstimmer u. a. bei den Schwetzinger SWR-Festspielen, durfte ich immer wieder bei seinen Vorbereitungen für die Konzerte begleiten, er war mein Initiator und Mentor und ermutigte mich in meinem Wunsch, diesen Beruf zu ergreifen.</p>
-                                    <p>Meine Lehre zum Klavierbauer absolvierte ich bei der Seiler-Pianofortefabrik GmbH in Kitzingen (2012-2016). In dieser Zeit beschäftigte ich mich vor allem mit dem ‚Innenleben‘ dieser klangvollen Instrumente und ich hatte täglich die Möglichkeit das Handwerk und die Kunst des Stimmens zu erlernen.</p>
-                                    <p>Im Laufe der Ausbildung gibt es auf der Oscar-Walcker-Schule 6 Schulblöcke, die die Lehrlinge absolvieren. Gunther Schaible war der „Klavierbaumeister der Schule schlechthin“ (Leiter der Werkstatt - Abteilung), seit seinem Ruhestand 2016 ist er Präsident von ‚Europiano‘, ein Zusammenschluss von 17 unabhängigen nationalen Klavierbauverbänden. Er war und ist für mich und viele Klavierbauer ein äußerst prägendes Vorbild.</p>
-                                    <p>Nach der bestandenen Gesellenprüfung vertiefte ich mein Wissen mit Hilfe zweier Klavierbauermeister aus dem Rheinland, bei Michael Köhler durch wiederholtes ‚Über-die-Schulter-schauen‘ bei Konzertstimmungen und bei Thilo Wünsch während eines mehrmonatigen Praktikums, wo ich viele weitere Feinheiten und Kniffe erlernte, die gerade im Service-, Instandhaltungs- und Reparaturbereich bei Kunden unerlässlich und elementar sind.</p>
-                                    <p>Ab 2016 war ich über 6 Jahre bei Piano Rumler, einem renommierten und weitbekanntem Klavierhaus in Bonn angestellt und dort sowohl im Außendienst, als auch im Betrieb für Stimmungen und Reparaturen zuständig. In dieser Zeit lernte ich sehr viele verschiedene deutsche und ausländische Klavier- und Flügelmarken kennen.</p>
-                                    <p class="font-medium text-piano-dark">Seit Beginn 2025 arbeite ich freiberuflich als Klavierstimmer im Großraum Stuttgart und auch darüber hinaus.</p>
-                                </div>
+                            <!-- 1. KURZFASSUNG (Wird angezeigt, wenn openBio == false) -->
+                            <div x-show="!openBio" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="space-y-6">
+                                <p>
+                                    Als gelernter Klavier- und Cembalobauer verbinde ich musikalisches Gehör mit präzisem Handwerk. Die Faszination für Intonation, Mechanik und Klang begleitet mich seit meiner Jugend.
+                                </p>
+                                <p>
+                                    Nach meiner Ausbildung bei der Seiler-Pianofortefabrik und mehrjähriger Werkstatt- sowie Außendiensterfahrung in einem renommierten Klavierhaus betreue ich Klaviere und Flügel aller namhaften Hersteller.
+                                </p>
+                                <p class="font-semibold text-piano-dark">
+                                    Seit Anfang 2025 bin ich als freiberuflicher Klavierstimmer im Großraum Stuttgart und Umgebung für Sie im Einsatz.
+                                </p>
                             </div>
 
-                            <div class="mt-10 pt-8 border-t border-gray-100 flex flex-col space-y-10">
+                            <!-- 2. VOLLSTÄNDIGER ORIGINALTEXT (Wird angezeigt, wenn openBio == true) -->
+                            <div x-show="openBio" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="space-y-6">
+                                <p>
+                                    Ich wuchs in einem musikalischen Elternhaus auf, wodurch mein Lebensweg in gewissem Rahmen vorgeprägt war. Mit 7 Jahren trat ich beim Knabenchor collegium iuvenum Stuttgart ein, mit 9 Jahren begann ich mit Violoncello - Unterricht. In Vorbereitung und parallel zu meinem Gesangsstudiums zum Diplomchorsänger an der Sängerakademie in Hamburg (2004-2009) kam Klavierunterricht dazu.
+                                </p>
+                                <p>
+                                    In meiner Freizeit singe ich aktuell in einigen Chören mit hohem Anspruch in Stuttgart und Maulbronn.
+                                </p>
+                                <p>
+                                    Bereits während meiner Kindheit und Jugend beherrschte gute Intonation und Stimmung von Instrumenten und Sängern meine ganze Aufmerksamkeit. Folgerichtig faszinierte mich der Beruf des Klavierbauers/Klavierstimmers.
+                                </p>
+                                <p>
+                                    Hinzu kam meine Begeisterung für den handwerklichen Umgang mit Holz und die Neugierde auf die mechanischen Zusammenhänge beim Klavierbau. Die Kombination aus Musik und Handwerk reizten mich an diesem Beruf besonders.
+                                </p>
+                                <p>
+                                    Herrn Ulrich Charisius (Heidelberg), legendärer Klavierstimmer u. a. bei den Schwetzinger SWR-Festspielen, durfte ich immer wieder bei seinen Vorbereitungen für die Konzerte begleiten, er war mein Initiator und Mentor und ermutigte mich in meinem Wunsch, diesen Beruf zu ergreifen.
+                                </p>
+                                <p>
+                                    Meine Lehre zum Klavierbauer absolvierte ich bei der Seiler-Pianofortefabrik GmbH in Kitzingen (2012-2016). In dieser Zeit beschäftigte ich mich vor allem mit dem ‚Innenleben‘ dieser klangvollen Instrumente und ich hatte täglich die Möglichkeit das Handwerk und die Kunst des Stimmens zu erlernen.
+                                </p>
+                                <p>
+                                    Im Laufe der Ausbildung gibt es auf der Oscar-Walcker-Schule 6 Schulblöcke, die die Lehrlinge absolvieren. Gunther Schaible war der „Klavierbaumeister der Schule schlechthin“ (Leiter der Werkstatt - Abteilung), seit seinem Ruhestand 2016 ist er Präsident von ‚Europiano‘, ein Zusammenschluss von 17 unabhängigen nationalen Klavierbauverbänden. Er war und ist für mich und viele Klavierbauer ein äußerst prägendes Vorbild.
+                                </p>
+                                <p>
+                                    Nach der bestandenen Gesellenprüfung vertiefte ich mein Wissen mit Hilfe zweier Klavierbauermeister aus dem Rheinland, bei Michael Köhler durch wiederholtes ‚Über-die-Schulter-schauen‘ bei Konzertstimmungen und bei Thilo Wünsch während eines mehrmonatigen Praktikums, wo ich viele weitere Feinheiten und Kniffe erlernte, die gerade im Service-, Instandhaltungs- und Reparaturbereich bei Kunden unerlässlich und elementar sind.
+                                </p>
+                                <p>
+                                    Ab 2016 war ich über 6 Jahre bei Piano Rumler, einem renommierten und weitbekanntem Klavierhaus in Bonn angestellt und dort sowohl im Außendienst, als auch im Betrieb für Stimmungen und Reparaturen zuständig. In dieser Zeit lernte ich sehr viele verschiedene deutsche und ausländische Klavier- und Flügelmarken kennen.
+                                </p>
+                                <p class="font-medium text-piano-dark">
+                                    Seit Beginn 2025 arbeite ich freiberuflich als Klavierstimmer im Großraum Stuttgart und auch darüber hinaus.
+                                </p>
+                            </div>
+
+                            <!-- Interaktions-Buttons -->
+                            <div class="mt-10 pt-8 border-t border-gray-200 flex flex-col space-y-8">
                                 <button @click="openBio = !openBio; $nextTick(() => {
-                                            if(openBio) {
-                                                $el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                                            } else {
+                                            if(!openBio) {
                                                 document.getElementById('ueber-mich').scrollIntoView({ behavior: 'smooth' });
                                             }
                                         })"
                                         class="group flex items-center text-leaf font-bold hover:text-leaf-light transition-all focus:outline-none w-fit">
-                                    <span x-text="openBio ? 'Weniger lesen' : 'Vollständige Biografie lesen'"></span>
+                                    <span x-text="openBio ? 'Kurzfassung anzeigen' : 'Vollständige Biografie lesen'"></span>
                                     <svg class="ml-2 w-5 h-5 transition-transform duration-300" :class="openBio ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                     </svg>
@@ -303,8 +332,10 @@
                                     </a>
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -395,161 +426,144 @@
             </div>
         </div>
     </section>
-    <section id="preise" class="py-24 bg-moss-light" x-data="{ openTuning: false }">
-        <div class="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 class="text-4xl font-display mb-4 text-center">Leistung & Preise</h2>
-            <p class="text-center text-gray-500 mb-12 italic text-sm">Gemäß § 19 UStG wird keine Mehrwertsteuer erhoben (Kleinunternehmerregelung).</p>
+<section id="preise" class="py-24 bg-moss-light">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        <h2 class="text-4xl font-display mb-4 text-center">Leistung & Preise</h2>
+        <p class="text-center text-gray-500 mb-12 italic text-sm">Gemäß § 19 UStG wird keine Mehrwertsteuer erhoben (Kleinunternehmerregelung).</p>
 
-            <div class="border-2 border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-500">
-                
-                <div class="bg-gray-50/50 border-b">
-                    <button @click="openTuning = !openTuning" 
-                            class="group w-full flex justify-between items-center p-6 text-left hover:bg-gray-100/80 transition-all duration-300 focus:outline-none">
-                        <div>
-                            <span class="block text-xl font-bold text-gray-900 group-hover:text-leaf transition-colors">Klavierstimmung / Flügelstimmung</span>
-                            <div class="flex items-center mt-1">
-                                <span class="text-sm text-leaf font-medium animate-pulse flex items-center">
-                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"/></svg>
-                                    Klicken für alle Stimm-Optionen & Sonderpreise
-                                </span>
-                            </div>
-                        </div>
-                        <div class="ml-4 w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 shadow-sm group-hover:border-leaf transition-all">
-                            <span class="text-2xl font-light text-leaf transition-transform duration-500 transform" :class="openTuning ? 'rotate-180' : 'rotate-0'" x-text="openTuning ? '−' : '+'"></span>
-                        </div>
-                    </button>
+        <div class="border-2 border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-500 bg-white divide-y divide-gray-100">
 
-                    <div x-show="openTuning" x-collapse.duration.800ms class="bg-white">
-                        <div class="p-6 space-y-4 border-t border-gray-100">
-                            
-                            <div class="flex justify-between items-start border-b border-gray-50 pb-4">
-                                <div class="flex items-start">
-                                    <p class="font-bold text-gray-800">Regelmäßige Stimmung</p>
-                                    <div x-data="{ open: false }" class="relative ml-2">
-                                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-leaf/40 hover:text-leaf transition">
-                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                        </button>
-                                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 md:left-full bottom-full mb-2">
-                                            Bei regelmäßig gestimmtem Instrument und geringer Tonhöhenabweichung. Inkl. Fahrtkosten bis zu 30 km einfache Fahrstrecke ab Stuttgart-Mitte.
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="font-bold text-leaf text-lg">105 €*</span>
-                            </div>
-
-                            <div class="flex justify-between items-start border-b border-gray-50 pb-4">
-                                <div class="flex items-start">
-                                    <p class="font-bold text-gray-800">Weiteres Instrument (Sonderpreis)</p>
-                                    <div x-data="{ open: false }" class="relative ml-2">
-                                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-leaf/40 hover:text-leaf transition">
-                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                        </button>
-                                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 md:left-full bottom-full mb-2">
-                                            Sonderpreis für ein weiteres Instrument am selben Stimmtermin bei regelmäßig gestimmtem Instrument und geringer Tonhöhenabweichung.
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="font-bold text-leaf text-lg">85 €*</span>
-                            </div>
-
-                            <div class="flex justify-between items-start border-b border-gray-50 pb-4">
-                                <div class="flex items-start">
-                                    <p class="font-bold text-red-700">Starke Verstimmung</p>
-                                    <div x-data="{ open: false }" class="relative ml-2">
-                                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700 transition">
-                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                        </button>
-                                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 md:left-full bottom-full mb-2">
-                                            Bei stark verstimmtem Instrument oder starker Tonhöhenabweichung. Inkl. Vorstimmen an einem extra Termin inkl. Fahrtkosten bis zu 30 km einfache Fahrstrecke ab Stuttgart-Mitte.
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="font-bold text-leaf text-lg">195 €*</span>
-                            </div>
-
-                            <div class="flex justify-between items-start">
-                                <div class="flex items-start">
-                                    <p class="font-bold text-red-700">Weiteres Instrument (Stark verstimmt)</p>
-                                    <div x-data="{ open: false }" class="relative ml-2">
-                                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700 transition">
-                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                        </button>
-                                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 md:left-full bottom-full mb-2">
-                                            Sonderpreis für ein weiteres Instrument am selben Stimmtermin bei stark verstimmtem Instrument oder starker Tonhöhenabweichung inkl. Vorstimmen an einem extra Termin.
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="font-bold text-leaf text-lg">155 €*</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="divide-y divide-gray-100">
-                    <div class="p-6 flex justify-between items-center bg-white hover:bg-gray-50 transition">
-                        <div class="flex items-center">
-                            <span class="font-bold text-gray-900">Besichtigung / Bewertung</span>
-                            <div x-data="{ open: false }" class="relative ml-2">
-                                <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-gray-300 hover:text-leaf transition">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                </button>
-                                <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 bottom-full mb-2">
-                                    Für privaten Kauf oder Verkauf (ohne Stimmauftrag) inkl. Fahrtkosten bis zu 30 km einfache Fahrstrecke ab Stuttgart-Mitte.
-                                </div>
-                            </div>
-                        </div>
-                        <span class="font-bold text-lg text-gray-700">45 €*</span>
-                    </div>
-
-                    <div class="p-6 flex justify-between items-center bg-white hover:bg-gray-50 transition">
-                        <div class="flex items-center">
-                            <span class="font-bold text-gray-900">Fahrtkostenpauschale (30-60 km)</span>
-                            <div x-data="{ open: false }" class="relative ml-2">
-                                <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-gray-300 hover:text-leaf transition">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                </button>
-                                <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 bottom-full mb-2">
-                                    Für mehr als 30 km und bis zu 60 km einfache Fahrstrecke.
-                                </div>
-                            </div>
-                        </div>
-                        <span class="font-bold text-lg text-leaf">20 €*</span>
-                    </div>
-
-                    <div class="p-6 flex justify-between items-center bg-white hover:bg-gray-50 transition">
-                        <div class="flex items-center">
-                            <span class="font-bold text-gray-900">Fahrtkostenpauschale (> 60 km)</span>
-                            <div x-data="{ open: false }" class="relative ml-2">
-                                <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-gray-300 hover:text-leaf transition">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                </button>
-                                <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 bottom-full mb-2">
-                                    Über 60 km einfache Fahrstrecke.
-                                </div>
-                            </div>
-                        </div>
-                        <span class="font-bold text-lg text-leaf">(auf Nachfrage)</span>
-                    </div>
-
-                    <div class="p-6 flex justify-between items-center bg-gray-50/50 transition">
-                        <div class="flex items-center">
-                            <span class="font-bold text-gray-900">Stundenlohn Reparatur</span>
-                            <div x-data="{ open: false }" class="relative ml-2">
-                                <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-gray-300 hover:text-leaf transition">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                </button>
-                                <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 bottom-full mb-2">
-                                    Für Reparaturen vor Ort / Intonieren / Regulieren / größere Reinigungsarbeiten (zzgl. Materialkosten). Bei extra Anfahrt: bis 30 km = 10 €; bis 60 km = 20 €; über 60 km nach Absprache.
-                                </div>
-                            </div>
-                        </div>
-                        <span class="font-bold text-lg text-gray-700">45 €*</span>
-                    </div>
-                </div>
+            <!-- Überschrift für Stimmungen -->
+            <div class="bg-gray-50/80 p-6 border-b border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Klavierstimmung / Flügelstimmung</h3>
             </div>
-            <p class="mt-4 text-xs text-gray-400 text-right">* (Lohnkosten nach § 35a EStG)</p>
+
+            <!-- Stimmungs-Leistungen -->
+            <div class="p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                <div class="flex items-center">
+                    <span class="font-bold text-gray-900">Regelmäßige Stimmung</span>
+                    <div x-data="{ open: false }" class="relative ml-2">
+                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </button>
+                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 md:left-full bottom-full mb-2">
+                            Bei regelmäßig gestimmtem Instrument und geringer Tonhöhenabweichung. Inkl. Fahrtkosten bis zu 30 km einfache Fahrstrecke ab Stuttgart-Mitte.
+                        </div>
+                    </div>
+                </div>
+                <span class="font-bold text-leaf text-lg">105 €*</span>
+            </div>
+
+            <div class="p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                <div class="flex items-center">
+                    <span class="font-bold text-gray-900">Weiteres Instrument (Sonderpreis)</span>
+                    <div x-data="{ open: false }" class="relative ml-2">
+                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </button>
+                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 md:left-full bottom-full mb-2">
+                            Sonderpreis für ein weiteres Instrument am selben Stimmtermin bei regelmäßig gestimmtem Instrument und geringer Tonhöhenabweichung.
+                        </div>
+                    </div>
+                </div>
+                <span class="font-bold text-leaf text-lg">85 €*</span>
+            </div>
+
+            <div class="p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                <div class="flex items-center">
+                    <span class="font-bold">Starke Verstimmung</span>
+                    <div x-data="{ open: false }" class="relative ml-2">
+                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700 transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </button>
+                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 md:left-full bottom-full mb-2">
+                            Bei stark verstimmtem Instrument oder starker Tonhöhenabweichung. Inkl. Vorstimmen an einem extra Termin inkl. Fahrtkosten bis zu 30 km einfache Fahrstrecke ab Stuttgart-Mitte.
+                        </div>
+                    </div>
+                </div>
+                <span class="font-bold text-leaf text-lg">195 €*</span>
+            </div>
+
+            <div class="p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                <div class="flex items-center">
+                    <span class="font-bold">Weiteres Instrument (Stark verstimmt)</span>
+                    <div x-data="{ open: false }" class="relative ml-2">
+                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700 transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </button>
+                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 md:left-full bottom-full mb-2">
+                            Sonderpreis für ein weiteres Instrument am selben Stimmtermin bei stark verstimmtem Instrument oder starker Tonhöhenabweichung inkl. Vorstimmen an einem extra Termin.
+                        </div>
+                    </div>
+                </div>
+                <span class="font-bold text-leaf text-lg">155 €*</span>
+            </div>
+
+            <!-- Weitere Service-Leistungen -->
+            <div class="p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                <div class="flex items-center">
+                    <span class="font-bold text-gray-900">Besichtigung / Bewertung</span>
+                    <div x-data="{ open: false }" class="relative ml-2">
+                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </button>
+                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 bottom-full mb-2">
+                            Für privaten Kauf oder Verkauf (ohne Stimmauftrag) inkl. Fahrtkosten bis zu 30 km einfache Fahrstrecke ab Stuttgart-Mitte.
+                        </div>
+                    </div>
+                </div>
+                <span class="font-bold text-lg text-gray-700">45 €*</span>
+            </div>
+
+            <div class="p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                <div class="flex items-center">
+                    <span class="font-bold text-gray-900">Fahrtkostenpauschale (30-60 km)</span>
+                    <div x-data="{ open: false }" class="relative ml-2">
+                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </button>
+                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 bottom-full mb-2">
+                            Für mehr als 30 km und bis zu 60 km einfache Fahrstrecke.
+                        </div>
+                    </div>
+                </div>
+                <span class="font-bold text-lg text-leaf">20 €*</span>
+            </div>
+
+            <div class="p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                <div class="flex items-center">
+                    <span class="font-bold text-gray-900">Fahrtkostenpauschale (> 60 km)</span>
+                    <div x-data="{ open: false }" class="relative ml-2">
+                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </button>
+                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 bottom-full mb-2">
+                            Über 60 km einfache Fahrstrecke.
+                        </div>
+                    </div>
+                </div>
+                <span class="font-bold text-lg text-leaf">(auf Nachfrage)</span>
+            </div>
+
+            <div class="p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                <div class="flex items-center">
+                    <span class="font-bold text-gray-900">Stundenlohn Reparatur</span>
+                    <div x-data="{ open: false }" class="relative ml-2">
+                        <button @mouseenter="open = true" @mouseleave="open = false" @click="open = !open" class="text-red-700/40 hover:text-red-700">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </button>
+                        <div x-show="open" x-transition class="absolute z-50 w-64 p-3 bg-gray-900 text-white text-xs rounded-xl shadow-xl left-0 bottom-full mb-2">
+                            Für Reparaturen vor Ort / Intonieren / Regulieren / größere Reinigungsarbeiten (zzgl. Materialkosten). Bei extra Anfahrt: bis 30 km = 10 €; bis 60 km = 20 €; über 60 km nach Absprache.
+                        </div>
+                    </div>
+                </div>
+                <span class="font-bold text-lg text-gray-700">45 €*</span>
+            </div>
+
         </div>
-    </section>
+        <p class="mt-4 text-xs text-gray-400 text-right">* (Lohnkosten nach § 35a EStG)</p>
+    </div>
+</section>
 
     <section id="kontakt" class="py-24 bg-leaf text-white">
         <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
