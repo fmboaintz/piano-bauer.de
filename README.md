@@ -1,1 +1,1 @@
-# Website for piano-bauer.de
+# Static website for piano-bauer.de
